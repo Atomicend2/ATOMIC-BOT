@@ -21,7 +21,7 @@
   "author": "Your Atomic UI Developer Name",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^6.7.2",
+    "@adiwajshing/baileys": "^6.7.8",
     "@google/generative-ai": "^0.14.0",
     "dotenv": "^16.4.5",
     "pino": "^9.2.0",
