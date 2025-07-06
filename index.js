@@ -1,11 +1,12 @@
 // index.js
 // Atomic WhatsApp Bot - Uses Baileys with a Base64 session string for persistence
 
-import { default as makeWASocket, Browsers, DisconnectReason, delay } from '@adiwajshing/baileys';
+import { default as makeWASocket, Browsers, DisconnectReason, delay } from '@whiskeysockets/baileys'; // Updated package name
 import pino from 'pino';
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Buffer } from 'buffer'; // Needed for Base64 decoding
+import { downloadContentFromMessage } from '@whiskeysockets/baileys'; // Also update this import
 
 dotenv.config();
 
@@ -301,8 +302,6 @@ _Nani?! That's impossible! So many features!_
     });
 }
 
-// Helper to download media from Baileys messages
-import { downloadContentFromMessage } from '@adiwajshing/baileys';
-
 // Start the bot
 startAtomicBot();
+                
