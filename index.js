@@ -144,7 +144,7 @@ async function startAtomicBot() {
 
     // Initial Pairing Code Generation (ONLY if not already authenticated by session string)
     // This part runs IF BAILEYS_SESSION is missing or invalid.
-    if (!sock.authState.creds.registered && !sock.user) {
+    if (!sock.authState.creds || !sock.authState.creds.registered && !sock.user) { // Corrected robustness check
         logger.info('\n🚨 No valid session found! Generating a new pairing code. 🚨');
         logger.info('You will need to manually enter your phone number in Render logs or set PHONE_NUMBER env variable for auto-pairing.');
 
