@@ -1,0 +1,33 @@
+{
+  "name": "atomic-baileys-bot-base64",
+  "version": "1.0.0",
+  "description": "Atomic WhatsApp Bot with Baileys and Base64 session string authentication.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "anime",
+    "atomic",
+    "nodejs",
+    "baileys",
+    "chatbot",
+    "gemini"
+  ],
+  "author": "Your Atomic UI Developer Name",
+  "license": "MIT",
+  "dependencies": {
+    "@adiwajshing/baileys": "^6.7.2",
+    "@google/generative-ai": "^0.14.0",
+    "dotenv": "^16.4.5",
+    "pino": "^9.2.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
